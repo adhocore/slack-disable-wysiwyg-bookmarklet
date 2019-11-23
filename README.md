@@ -30,12 +30,13 @@ For bugs, feedback, and source, visit the extension repo
 
 ### Browser bookmarklet
 
-1. Copy the contents of `index.js`
-2. Paste into the URL field of a browser bookmark, and prepend the text with
-   `javascript:`
+1. Copy the contents of [`browser.js`](./browser.js)
+2. Paste into the URL field of a browser bookmark
 3. Navigate to a Slack workspace in that browser
 4. Execute the bookmarklet to disable the WYSIWYG editor
 5. Repeat each time you reload slack
+
+> **Chrome**: Visit `chrome://bookmarks/`, drag and drop this bookmarklet in visible area of bookmarks bar at top so you can execute it anytime.
 
 ### In the desktop app
 
