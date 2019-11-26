@@ -1,5 +1,3 @@
-javascript:(_ => {
-  const {redux} = slackDebug.activeTeam;
-  const {wysiwyg_composer, wysiwyg_composer_ios, wysiwyg_composer_webapp, ...payload} = redux.getState().experiments;
-  redux.dispatch({type: '[19] Bulk add experiment assignments to redux', payload});
-})();
+javascript:
+['', '_ios', '_webapp'].map(w => delete slackDebug.activeTeam.redux.getState().experiments['wysiwyg_composer' + w]);
+setTimeout(_ => document.querySelector('[type=paperclip]').click(), 9)
